@@ -3,7 +3,7 @@ import logo from "../public/img/logo-m.png";
 import Image from "next/image";
 
 const Header = () => (
-  <header className="h-[287px] mb-[-287px] bg-transparent relative z-10">
+  <header className="h-[287px] min-w-[320px] mb-[-287px] bg-transparent relative z-10">
     <div className="container mx-auto lg:max-w-[768px] xl:max-w-[1440px] px-[20px] md:px-[32px] xl:px-[105px] flex justify-between">
       <div className="inline-block w-[61px] h-[34px] mt-[36px] md:mt-[25px] ">
         <Image src={logo} className="h-[21px] w-[59px]" alt="logo" />

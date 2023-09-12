@@ -40,14 +40,14 @@ const Hero = () => (
               Carpathian’s Secrets
             </h2>
             <p
-              className="md:inline-block w-[167px] md:w-[262px] xl:w-auto text-white font-thin text-[10px] md:text-[14px] 
+              className="md:inline-block w-[167px] md:w-[262px] xl:w-auto text-white font-extralight text-[10px] md:text-[14px] 
             leading-[1.6] md:leading-[1.14] md:tracking-[1.26px]"
             >
               Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake /
               Bukovel
             </p>
             <p
-              className="md:inline-block md:w-[230px] xl:w-[294px] text-white text-justify text-[14px] md:text-[16px] xl:text-[18px] font-thin
+              className="md:inline-block md:w-[230px] xl:w-[294px] text-white text-justify text-[14px] md:text-[16px] xl:text-[18px] font-extralight
                leading-[1.43] md:leading-[1.25] xl:leading-[1.33] 
              md:absolute md:right-[32px] xl:right-[104px] md:top-[266px] xl:top-[446px]"
             >

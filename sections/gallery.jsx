@@ -3,7 +3,7 @@ import Slider from "@/components/Slider";
 const Gallery = () => {
   return (
     <section>
-      <div className="container mx-auto lg:max-w-[768px] xl:max-w-[1440px] bg-[-304px_0px]  bg-gallery-background relative ">
+      <div className="container mx-auto min-w-[320px] lg:max-w-[768px] xl:max-w-[1440px] bg-[-304px_0px]  bg-gallery-background relative ">
         <div className="h-full w-full px-[20px] md:px-[32px] py-[56px] md:py-[64px] xl:px-[80px] xl:pb-[103px] xl:pt-[80px]  bg-[#020F08BF]  ">
           <div className="w-full h-[287px] bg-gradient-to-b from-[rgba(0,24,38,1)] to-[rgba(0,37,49,0)] opacity-75 absolute top-0 left-0 "></div>
           <div className="w-full  h-full relative z-10">

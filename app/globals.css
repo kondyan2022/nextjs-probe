@@ -17,3 +17,23 @@
 .slider-button {
   z-index: 2;
 }
+
+.input-placeholder {
+  @apply placeholder:text-[13px] xl:placeholder:text-[20px] placeholder:font-extralight 
+        placeholder:leading-[1.85] xl:placeholder:leading-[1.2];
+}
+
+.input-style {
+  @apply block text-[13px] xl:text-[20px] font-extralight pl-[8px] leading-[1.84]  xl:leading-[1.2] xl:py-[2px] bg-[#FFFFFF0D] 
+  focus-visible:outline-none border-none;
+}
+
+.input-label {
+  @apply text-[12px] font-extralight tracking-[2.4px] leading-[2.0] mb-[4px];
+}
+
+.hover-effect {
+  @apply relative after:content-[''] after:absolute  after:h-[1px] after:w-full
+   after:bg-white after:left-0 after:bottom-0 after:scale-0 after:origin-right hover:after:origin-left hover:after:scale-100
+   after:transition-transform after:duration-500;
+}
