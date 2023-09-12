@@ -16,6 +16,7 @@ module.exports = {
         "contact-bg-m": "url('/img/contact-bg-m.jpg')",
         "contact-bg-tablet": "url('/img/contact-bg-tablet.jpg')",
         "contact-bg-desktop": "url('/img/contact-bg-desktop.jpg')",
+        "red-close": "url('/img/close.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

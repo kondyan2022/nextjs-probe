@@ -6,7 +6,7 @@ import SwiperSlider from "./SwiperSlider";
 
 export default function Slider() {
   const { breakpoint } = useWindowSize();
-  console.log("Slider--->", breakpoint);
+
   return breakpoint === "none" ? (
     <SimpleGallery />
   ) : (

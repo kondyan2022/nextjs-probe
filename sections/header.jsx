@@ -1,6 +1,7 @@
 import { Link } from "next/link";
 import logo from "../public/img/logo-m.png";
 import Image from "next/image";
+import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
 
 const Header = () => (
   <header className="h-[287px] min-w-[320px] mb-[-287px] bg-transparent relative z-10">
@@ -40,12 +41,13 @@ const Header = () => (
           </li>
         </ul>
       </nav>
-      <button
+      <BurgerMenu />
+      {/* <button
         type="button"
         className="text-[14px] leading-[1.25] tracking-[1.4px] text-white md:hidden ml-auto mt-[43px]"
       >
         MENU
-      </button>
+      </button> */}
     </div>
   </header>
 );
