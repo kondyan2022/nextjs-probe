@@ -1,4 +1,5 @@
-import { Link } from "next/link";
+"use client";
+import { Link } from "react-scroll";
 import logo from "../public/img/logo-m.png";
 import Image from "next/image";
 import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
@@ -14,12 +15,12 @@ const Header = () => (
       </div>
       <nav className="hidden md:inline-block mt-[39px] xl:mt-[34px] mr-[31px] md:mr-0 ">
         <ul className="flex gap-x-[24px] text-sm">
-          <li>
-            <a href="#" className="text-[14px] tracking-[1.4px] text-white">
+          {/* <li>
+            <Link href="#" className="text-[14px] tracking-[1.4px] text-white">
               About
-            </a>
-          </li>
-          <li>
+            </Link>
+          </li> */}
+          {/* <li>
             <a href="#" className="text-[14px] tracking-[1.4px] text-white">
               Services
             </a>
@@ -28,16 +29,32 @@ const Header = () => (
             <a href="#" className="text-[14px] tracking-[1.4px] text-white">
               Carry
             </a>{" "}
-          </li>
+          </li> */}
           <li>
-            <a href="#" className="text-[14px] tracking-[1.4px] text-white">
+            <Link
+              activeClass="active"
+              to="SectionGallery"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="text-[14px] tracking-[1.4px] text-white hover:cursor-pointer hover-effect"
+            >
               Gallery
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-[14px] tracking-[1.4px] text-white">
+            <Link
+              activeClass="active"
+              to="SectionContact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="text-[14px] tracking-[1.4px] text-white hover:cursor-pointer hover-effect"
+            >
               Contacts
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

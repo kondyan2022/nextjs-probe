@@ -1,5 +1,4 @@
 export default function ErrorText({ children }) {
-  console.log(children);
   return (
     children && (
       <p

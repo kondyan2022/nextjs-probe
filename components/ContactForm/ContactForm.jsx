@@ -10,7 +10,6 @@ export default function ContactForm() {
   } = useForm();
   const onSubmit = (data) => console.log(data);
 
-  console.log("error-->>", errors);
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}

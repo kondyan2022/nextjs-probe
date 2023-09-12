@@ -6,7 +6,7 @@ import {
   enableBodyScroll,
   clearAllBodyScrollLocks,
 } from "body-scroll-lock";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import useWindowSize from "../../hooks/useWindowSize";
 
 export default function BurgerMenu() {

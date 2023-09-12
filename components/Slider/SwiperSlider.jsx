@@ -15,7 +15,6 @@ import { SwiperButtonNext, SwiperButtonPrev } from "@/components/SwiperButtons";
 import GalleryCard from "@/components/GalleryCard/GalleryCard";
 
 const SwiperSlider = ({ breakpoint }) => {
-  console.log("breakpoint-props->>>>", breakpoint);
   return (
     <Swiper
       key={breakpoint === "md" ? "123" : "456"}

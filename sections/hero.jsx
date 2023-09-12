@@ -1,3 +1,5 @@
+import ButtonJoin from "@/components/Button/ButtonJoin";
+
 const Hero = () => (
   <section>
     <div className="container mx-auto lg:max-w-[768px] xl:max-w-[1440px]">
@@ -16,7 +18,6 @@ const Hero = () => (
             className="absolute top-0 bottom-0 left-0 right-0 flex flex-col flex-wrap gap-y-[24px] md:gap-y-[66px] xl:md:gap-y-[148px]
                           px-[20px] md:px-[32px] xl:px-[105px] pt-[105px] md:pt-[124px] xl:pt-[130px]"
           >
-            {/* md:w-[768px] xl:w-min-[1280px] xl:w-max-[1440px] */}
             <h1
               className="md:inline-flex w-[118px] md:w-[240px] xl:w-[305px] font-thin  text-[37px] md:text-[67px] xl:text-[98px]
              text-white uppercase flex flex-wrap justify-center self-end leading-[1.25] md:absolute"
@@ -55,22 +56,7 @@ const Hero = () => (
               the Carpathians. Enjoy stunning views, exciting expeditions, and
               the best service!
             </p>
-            <div
-              className="relative md:absolute md:bottom-[67px] xl:bottom-[110px] 
-                           md:right-[32px] xl:right-[104px] md:inline-block md:w-[230px] xl:w-auto "
-            >
-              <button
-                type="button"
-                className="block h-[53px] md:h-[50px] xl:h-[71px] w-full md:w-[230px] xl:w-[293px] text-[18px] 
-                            leading-[2.67] text-white  font-bold bg-[#ffffff19] hover:bg-[#ffffff33]"
-              >
-                JOIN NOW
-              </button>
-              <div className="absolute top-0 left-0 h-[8px] w-[42px] border-s border-t border-white "></div>
-              <div className="absolute top-0 right-0 h-[8px] w-[42px] border-e border-t border-white "></div>
-              <div className="absolute bottom-0 left-0 h-[8px] w-[42px] border-s border-b border-white "></div>
-              <div className="absolute bottom-0 right-0 h-[8px] w-[42px] border-e  border-b border-white "></div>
-            </div>
+            <ButtonJoin />
           </div>
         </div>
       </div>
