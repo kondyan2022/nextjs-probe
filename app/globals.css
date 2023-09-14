@@ -4,18 +4,77 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-wrapper .swiper-slide {
+section#SectionGallery .swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-wrapper .swiper-slide-active .card-filter {
+section#SectionGallery .swiper-wrapper .swiper-slide-active .card-filter {
   opacity: 0;
 }
 
-.slider-button {
+section#SectionGallery .slider-button {
   z-index: 2;
+}
+
+.active-pagination-item {
+  position: relative;
+  font-weight: 500;
+  padding-left: 16px;
+}
+
+.active-pagination-item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%) rotate(45deg);
+  background-color: #fff;
+}
+
+.pagination-item {
+  transition: opacity 300ms;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.pagination-item:hover {
+  opacity: 1;
+}
+
+.offer-main-swiper .swiper-pagination {
+  position: absolute;
+  top: 134px;
+  left: 195px;
+  bottom: auto;
+  width: 116px;
+  display: inline-block;
+  color: white;
+  font-size: 43px;
+  font-weight: 100;
+  line-height: 1.16;
+}
+
+@media screen and (min-width: 768px) {
+  .offer-main-swiper .swiper-pagination {
+    font-size: 67px;
+    top: 74px;
+    left: 517px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offer-main-swiper .swiper-pagination {
+    font-size: 98px;
+    top: 110px;
+    left: 724px;
+  }
+}
+
+.offer-main-swiper .swiper-pagination .swiper-pagination-total {
+  color: #ffffff33;
 }
 
 .input-placeholder {
