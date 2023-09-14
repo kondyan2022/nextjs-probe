@@ -25,6 +25,7 @@ export default function Offer() {
         <Swiper
           effect="fade"
           noSwiping={true}
+          touchRatio={0}
           pagination={{
             type: "fraction",
             formatFractionCurrent: function (number) {
