@@ -9,7 +9,7 @@ export default function OfferPagination() {
     <ul
       className="uppercase text-white font-extralight text-[20x] md:text-[22px] xl:text-[28px] 
                     leading-[0.85] md:leading-[0.81] xl:leading-[0.85]  
-                    flex flex-col gap-[16px] w-[170px] md:w-[210px] xl:w-[260px]"
+                    flex flex-col gap-[16px] w-[165px] md:w-[210px] xl:w-[260px]"
     >
       <li
         className={`cursor-pointer ${
