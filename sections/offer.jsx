@@ -24,6 +24,7 @@ export default function Offer() {
       <SectionContainer>
         <Swiper
           effect="fade"
+          noSwiping={true}
           pagination={{
             type: "fraction",
             formatFractionCurrent: function (number) {
@@ -36,7 +37,7 @@ export default function Offer() {
               return `<span class=${currentClass}></span>/<span class=${totalClass}></span>`;
             },
           }}
-          //   navigation={true}
+          // navigation={  true}
           modules={[Pagination, Navigation, EffectFade]}
           className="offer-main-swiper"
         >
