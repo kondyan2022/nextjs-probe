@@ -20,16 +20,25 @@ const Header = () => (
               About
             </Link>
           </li> */}
-          {/* <li>
-            <a href="#" className="text-[14px] tracking-[1.4px] text-white">
-              Services
-            </a>
-          </li>
+          {/* 
           <li>
             <a href="#" className="text-[14px] tracking-[1.4px] text-white">
               Carry
             </a>{" "}
           </li> */}
+          <li>
+            <Link
+              activeClass="active"
+              to="offer"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="text-[14px] tracking-[1.4px] text-white hover:cursor-pointer hover-effect"
+            >
+              Services
+            </Link>
+          </li>
           <li>
             <Link
               activeClass="active"
@@ -59,12 +68,6 @@ const Header = () => (
         </ul>
       </nav>
       <BurgerMenu />
-      {/* <button
-        type="button"
-        className="text-[14px] leading-[1.25] tracking-[1.4px] text-white md:hidden ml-auto mt-[43px]"
-      >
-        MENU
-      </button> */}
     </div>
   </header>
 );

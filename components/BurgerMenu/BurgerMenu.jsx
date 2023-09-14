@@ -48,6 +48,22 @@ export default function BurgerMenu() {
             <Link
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
+              to="offer"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
+              activeClass="active"
               to="SectionGallery"
               spy={true}
               smooth={true}
