@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #1e1e1e;
+}
+
 section#SectionGallery .swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
