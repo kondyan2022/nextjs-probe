@@ -2,7 +2,7 @@ import ButtonJoin from "@/components/Button/ButtonJoin";
 
 const Hero = () => (
   <section>
-    <div className="container mx-auto lg:max-w-[768px] xl:max-w-[1440px]">
+    <div className="container mx-auto min-w-[320px] max-w-[480px] md:max-w-[768px] xl:max-w-[1440px]">
       <div
         className="h-[642px] md:h-[530px] xl:h-[763px] min-w-[320px] md:mi-w-none 
                        max-w-[640px] md:max-w-none  md:w-full  relative overflow-hidden mx-auto"
