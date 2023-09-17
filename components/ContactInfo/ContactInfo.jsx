@@ -14,7 +14,7 @@ export default function ContactInfo() {
         {dataContact.phone.map((elem, index) => (
           <li key={index}>
             <a
-              href={`tel:${elem.replace(/[( )]/, "")}`}
+              href={`tel:${elem.replace(/[() ]/g, "")}`}
               className="leading-[1.71] md:leading-[1.5] xl:leading-[1.33] hover-effect"
             >
               {elem}
@@ -51,7 +51,7 @@ export default function ContactInfo() {
               href={`${elem.link}`}
               className="leading-[1.71] md:leading-[1.5] xl:leading-[1.33] hover-effect"
               target="_blank"
-              referrerPolicy="noreferrer noopener"
+              rel="noreferrer noopener"
             >
               {elem.name}
             </a>

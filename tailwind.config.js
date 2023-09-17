@@ -16,6 +16,12 @@ module.exports = {
         "contact-bg-m": "url('/img/contact-bg-m.jpg')",
         "contact-bg-tablet": "url('/img/contact-bg-tablet.jpg')",
         "contact-bg-desktop": "url('/img/contact-bg-desktop.jpg')",
+        "about-bg-mobile":
+          "linear-gradient(#020F0880,#020F0880), url('/img/about-bg-mobile.jpg')",
+        "about-bg-tablet":
+          "linear-gradient(#020F0880,#020F0880), url('/img/about-bg-tablet.jpg')",
+        "about-bg-desktop":
+          "linear-gradient(#020F0880,#020F0880), url('/img/about-bg-desktop.jpg')",
         "red-close": "url('/img/close.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

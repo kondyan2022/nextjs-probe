@@ -46,6 +46,24 @@ export default function BurgerMenu() {
         <ul className="flex flex-col gap-[48px] text-center mt-[110px]">
           <li>
             <Link
+              href="/"
+              className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
+              activeClass="active"
+              to="About"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
               to="offer"
@@ -62,6 +80,7 @@ export default function BurgerMenu() {
           </li>
           <li>
             <Link
+              href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
               to="SectionGallery"
@@ -78,6 +97,7 @@ export default function BurgerMenu() {
           </li>
           <li>
             <Link
+              href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
               to="SectionContact"

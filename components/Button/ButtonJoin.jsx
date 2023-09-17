@@ -15,7 +15,6 @@ export default function ButtonJoin() {
         smooth={true}
         offset={0}
         duration={500}
-        type="button"
         className="block h-[53px] md:h-[50px] xl:h-[71px] w-full md:w-[230px] xl:w-[293px] text-[18px]
                            xl:text-[32px] text-center leading-[2.67] xl:leading-[1.2] xl:pt-[16px]  hover:cursor-pointer 
                            text-white  font-bold bg-[#ffffff19] hover:bg-[#ffffff33]"
