@@ -49,7 +49,7 @@ export default function BurgerMenu() {
               href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
-              to="About"
+              to="about"
               spy={true}
               smooth={true}
               offset={0}
