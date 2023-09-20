@@ -12,7 +12,7 @@ export default function OfferSlide({ image, children }) {
         alt="background"
         width={image.mobile.width}
         height={image.mobile.height}
-        className="absolute w-[1440px] h-[886px] top-0 left-0 object-cover object-center"
+        className="absolute w-auto h-[886px] top-0 left-0 object-cover object-center "
       ></Image>
       <div className="w-full h-full bg-[#020f0880] relative">
         <div className="w-full h-[291px] md:h-[274px] xl:h-[241px] bg-gradient-to-b from-[rgba(0,24,38,1)] to-[rgba(0,37,49,0)] opacity-75 absolute top-0 left-0 "></div>

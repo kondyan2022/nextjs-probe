@@ -6,7 +6,7 @@ export default function SlideSwiperButtonNext() {
 
   return (
     <button
-      className="slider-button text-[33px] text-white font-thin uppercase "
+      className="slider-button text-[33px] text-white font-thin uppercase hover-effect"
       onClick={() => swiper.slidePrev()}
     >
       prev

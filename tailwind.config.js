@@ -22,6 +22,12 @@ module.exports = {
           "linear-gradient(#020F0880,#020F0880), url('/img/about-bg-tablet.jpg')",
         "about-bg-desktop":
           "linear-gradient(#020F0880,#020F0880), url('/img/about-bg-desktop.jpg')",
+        "chooseus-bg-mobile":
+          "linear-gradient(#020F08BF,#020F08BF), linear-gradient(180deg, #001826BF 0%, rgba(0, 37, 49, 0.00) 30%, rgba(0, 37, 49, 0.00) 70%, #001826BF 100%), url('/img/chooseus-bg-mobile.jpg')",
+        "chooseus-bg-tablet":
+          "linear-gradient(#020F08BF,#020F08BF), linear-gradient(180deg, #001826BF 0%, rgba(0, 37, 49, 0.00) 34%, rgba(0, 37, 49, 0.00) 66%, #001826BF 100%), url('/img/chooseus-bg-tablet.jpg')",
+        "chooseus-bg-desktop":
+          "linear-gradient(#020F08BF,#020F08BF), url('/img/chooseus-bg-desktop.jpg')",
         "red-close": "url('/img/close.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

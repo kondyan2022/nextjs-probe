@@ -6,6 +6,7 @@
 
 body {
   background-color: #1e1e1e;
+  color: white;
 }
 
 section#SectionGallery .swiper-wrapper .swiper-slide {
@@ -93,6 +94,9 @@ section#SectionGallery .slider-button {
 
 .input-label {
   @apply text-[12px] font-extralight tracking-[2.4px] leading-[2.0] mb-[4px];
+}
+.checkbox-label {
+  @apply text-[12px] font-extralight  leading-[1.83] xl:leading-[2];
 }
 
 .hover-effect {
