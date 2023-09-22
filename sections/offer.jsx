@@ -7,20 +7,18 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
 import { Pagination, Navigation, EffectFade } from "swiper/modules";
+import Image from "next/image";
+
 import SectionContainer from "@/components/SectionContainer/SectionContainer";
 import OfferSlide from "@/components/OfferSlide/OfferSlide";
 import offerData from "@/public/data/offer.json";
 import OfferPagination from "@/components/OfferPagination/OfferPagination";
-import Image from "next/image";
+import useWindowSize from "@/hooks/useWindowSize";
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
 export default function Offer() {
+  const { breakpoint } = useWindowSize();
   return (
-    <section id="offer">
+    <section id="services">
       <SectionContainer>
         <Swiper
           effect="fade"
@@ -44,25 +42,54 @@ export default function Offer() {
         >
           {offerData.map((elem) => (
             <SwiperSlide key={elem.index}>
-              <OfferSlide image={elem.bgImage}>
+              <OfferSlide
+                image={
+                  breakpoint === "xl"
+                    ? elem.bgImage.desktop
+                    : breakpoint === "md"
+                    ? elem.bgImage.tablet
+                    : elem.bgImage.mobile
+                }
+                alt={elem.altBgText}
+              >
                 <div
                   className="w-full h-full flex flex-col md:flex-row pt-[146px] md:pt-[118px] xl:pt-[142x] gap-[12px] md:gap-[20px]
                                       md:items-end   text-white"
                 >
                   <Image
-                    src={`/img/${elem.image.mobile.uri}`}
-                    alt="photo"
-                    width={elem.image.mobile.width}
-                    height={elem.image.mobile.height}
-                    className="w-[280px] md:w-[463px] xl:w-[607px] h-[213px] md:h-[370px] xl:h-[429px]"
+                    src={`/img/${
+                      breakpoint === "xl"
+                        ? elem.image.desktop.uri
+                        : breakpoint === "md"
+                        ? elem.image.tablet.uri
+                        : elem.image.mobile.uri
+                    }`}
+                    priority={true}
+                    alt="elem.menuText"
+                    width={
+                      breakpoint === "xl"
+                        ? elem.image.desktop.width
+                        : breakpoint === "md"
+                        ? elem.image.tablet.width
+                        : elem.image.mobile.width
+                    }
+                    height={
+                      breakpoint === "xl"
+                        ? elem.image.desktop.height
+                        : breakpoint === "md"
+                        ? elem.image.tablet.height
+                        : elem.image.mobile.height
+                    }
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 60vw, 45vw"
+                    className="w-full  md:w-[463px] xl:w-[607px] h-auto md:h-[370px] xl:h-[429px]"
                   ></Image>
                   <div className="flex flex-col  grow md:grow-0 md:gap-[34px]  xl:ml-auto xl:self-stretch">
-                    <h3 className="text-right md:text-left w-[280px] md:w-[200px] text-[12px] font-extralight leading-[2] tracking-[2.4px] xl:mt-[12px]">
+                    <h3 className="text-right md:text-left w-full md:w-[200px] text-[12px] font-extralight leading-[2] tracking-[2.4px] xl:mt-[12px]">
                       {elem.headerText}
                     </h3>
                     <div
                       className="mt-auto w-[280px] md:w-[221px] xl:w-[293px] self-end text-[14px] md:text-[13px] xl:text-[18px] font-extralight  
-                                leading-[1.43] md:leading-[1.53] xl:leading-[1.33] xl:mt-auto md:text-justify"
+                                leading-[1.43] md:leading-[1.53] xl:leading-[1.33] xl:mt-auto md:text-justify z-10"
                     >
                       {elem.text}
                     </div>

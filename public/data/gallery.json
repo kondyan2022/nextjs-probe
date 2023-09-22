@@ -1,0 +1,24 @@
+[
+  { "index": 1, "uri": "gallery-1.jpg", "alt": "Mountain peak" },
+  {
+    "index": 2,
+    "uri": "gallery-2.jpg",
+    "alt": "House on the shore of a forest lake"
+  },
+  {
+    "index": 3,
+    "uri": "gallery-3.jpg",
+    "alt": "Path to a forest house along a mountain river"
+  },
+  { "index": 4, "uri": "gallery-1.jpg", "alt": "Mountain peak" },
+  {
+    "index": 5,
+    "uri": "gallery-2.jpg",
+    "alt": "House on the shore of a forest lake"
+  },
+  {
+    "index": 6,
+    "uri": "gallery-3.jpg",
+    "alt": "Path to a forest house along a mountain river"
+  }
+]

@@ -8,6 +8,7 @@ import {
 } from "body-scroll-lock";
 import { Link } from "react-scroll";
 import useWindowSize from "../../hooks/useWindowSize";
+import menuItems from "@/public/data/menuitem.json";
 
 export default function BurgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +45,30 @@ export default function BurgerMenu() {
           CLOSE
         </button>
         <ul className="flex flex-col gap-[48px] text-center mt-[110px]">
-          <li>
+          {menuItems.map(
+            ({ index, name, active }) =>
+              active && (
+                <li key={index}>
+                  <Link
+                    href="/"
+                    className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect capitalize"
+                    activeClass="active"
+                    to={name}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    {name}
+                  </Link>
+                </li>
+              )
+          )}
+
+          {/* <li>
             <Link
               href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
@@ -66,7 +90,7 @@ export default function BurgerMenu() {
               href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
-              to="offer"
+              to="services"
               spy={true}
               smooth={true}
               offset={0}
@@ -83,7 +107,24 @@ export default function BurgerMenu() {
               href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
-              to="SectionGallery"
+              to="career"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => {
+                setIsMenuOpen(false);
+              }}
+            >
+              Career
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/"
+              className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
+              activeClass="active"
+              to="gallery"
               spy={true}
               smooth={true}
               offset={0}
@@ -100,7 +141,7 @@ export default function BurgerMenu() {
               href="/"
               className="text-[18px] tracking-[1.8px] hover:cursor-pointer hover-effect"
               activeClass="active"
-              to="SectionContact"
+              to="contacts"
               spy={true}
               smooth={true}
               offset={0}
@@ -111,7 +152,7 @@ export default function BurgerMenu() {
             >
               Contacts
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>,
       document.body

@@ -3,7 +3,7 @@ import ErrorText from "@/components/ErrorText/ErrorText";
 import whyusData from "@/public/data/whyus.json";
 export default function ChooseUs() {
   return (
-    <section id="chooseus">
+    <section id="career">
       <div
         className="container mx-auto min-w-[320px] max-w-[480px] md:max-w-[768px] xl:max-w-[1440px] 
                     px-[20px] md:px-[32px] py-[56px] md:py-[64px] xl:p-[104px] 

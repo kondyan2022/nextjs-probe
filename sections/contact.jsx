@@ -3,7 +3,7 @@ import ContactInfo from "@/components/ContactInfo/ContactInfo";
 
 const Contact = () => {
   return (
-    <section id="SectionContact">
+    <section id="contacts">
       <div
         className="container mx-auto min-w-[320px] max-w-[480px] md:max-w-[768px] xl:max-w-[1440px] 
             bg-[-121px_-0px] md:bg-[-304px_0px] xl:bg-[-51px_-51px]

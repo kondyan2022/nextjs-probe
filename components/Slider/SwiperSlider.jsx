@@ -13,6 +13,7 @@ import "swiper/css/effect-coverflow";
 
 import { SwiperButtonNext, SwiperButtonPrev } from "@/components/SwiperButtons";
 import GalleryCard from "@/components/GalleryCard/GalleryCard";
+import galleryData from "@/public/data/gallery.json";
 
 const SwiperSlider = ({ breakpoint }) => {
   return (
@@ -33,11 +34,11 @@ const SwiperSlider = ({ breakpoint }) => {
       }}
       modules={[EffectCoverflow, Navigation, Autoplay]}
     >
-      {[1, 2, 3, 4, 5, 6].map((elem) => (
+      {galleryData.map((elem) => (
         <SwiperSlide key={elem}>
           <GalleryCard
-            src={`/img/gallery-${elem}.jpg`}
-            alt="photo"
+            src={`/img/${elem.uri}`}
+            alt={elem.alt}
             imageSize={
               breakpoint === "md"
                 ? { width: 458, height: 306 }

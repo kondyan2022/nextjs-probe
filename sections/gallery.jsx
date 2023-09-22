@@ -2,7 +2,7 @@ import Slider from "@/components/Slider";
 
 const Gallery = () => {
   return (
-    <section id="SectionGallery">
+    <section id="gallery">
       <div
         className="container mx-auto min-w-[320px] max-w-[480px] md:max-w-[768px] xl:max-w-[1440px]
                        bg-[-304px_0px]  bg-gallery-background relative "

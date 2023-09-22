@@ -4,49 +4,38 @@
     "image": {
       "mobile": {
         "uri": "offer-1-mobile.jpg",
-        "width": 280,
-        "height": 213,
-        "translateX": 0,
-        "translateY": 0
+        "width": 840,
+        "height": 639
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-1-tablet.jpg",
+        "width": 926,
+        "height": 740
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-1-desktop.jpg",
+        "width": 1214,
+        "height": 858
       }
     },
     "bgImage": {
       "mobile": {
-        "uri": "offer-bg-1.jpg",
-        "width": 1647,
-        "height": 886,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-1-bg-mobile.jpg",
+        "width": 960,
+        "height": 1702
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-1-bg-tablet.jpg",
+        "width": 1536,
+        "height": 1242
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-1-bg-desktop.jpg",
+        "width": 2880,
+        "height": 1558
       }
     },
+    "altBgText": "Forest",
     "menuText": "ATVs Traveling",
     "headerText": "Feel the adrenaline rush",
     "text": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains."
@@ -56,49 +45,38 @@
     "image": {
       "mobile": {
         "uri": "offer-2-mobile.jpg",
-        "width": 280,
-        "height": 213,
-        "translateX": 37,
-        "translateY": 0
+        "width": 840,
+        "height": 639
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-2-tablet.jpg",
+        "width": 926,
+        "height": 740
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-2-desktop.jpg",
+        "width": 1214,
+        "height": 858
       }
     },
     "bgImage": {
       "mobile": {
-        "uri": "offer-bg-2.jpg",
-        "width": 1440,
-        "height": 960,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-2-bg-mobile.jpg",
+        "width": 960,
+        "height": 1702
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-2-bg-tablet.jpg",
+        "width": 1536,
+        "height": 1242
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-2-bg-desktop.jpg",
+        "width": 2880,
+        "height": 1558
       }
     },
+    "altBgText": "Forest path",
     "menuText": "Rock climbing",
     "headerText": "Destroy your limitations",
     "text": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks."
@@ -108,49 +86,38 @@
     "image": {
       "mobile": {
         "uri": "offer-3-mobile.jpg",
-        "width": 280,
-        "height": 213,
-        "translateX": 151,
-        "translateY": 259
+        "width": 840,
+        "height": 639
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-3-tablet.jpg",
+        "width": 926,
+        "height": 740
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-3-desktop.jpg",
+        "width": 1214,
+        "height": 858
       }
     },
     "bgImage": {
       "mobile": {
-        "uri": "offer-bg-3.jpg",
-        "width": 1470,
-        "height": 981,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-3-bg-mobile.jpg",
+        "width": 960,
+        "height": 1702
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-3-bg-tablet.jpg",
+        "width": 1536,
+        "height": 1242
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-3-bg-desktop.jpg",
+        "width": 2880,
+        "height": 1558
       }
     },
+    "altBgText": "Mountain landscape from above",
     "menuText": "Hot air ballooning",
     "headerText": "Get Inspired",
     "text": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless."
@@ -161,49 +128,38 @@
     "image": {
       "mobile": {
         "uri": "offer-4-mobile.jpg",
-        "width": 280,
-        "height": 213,
-        "translateX": 115,
-        "translateY": 3
+        "width": 840,
+        "height": 639
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-4-tablet.jpg",
+        "width": 926,
+        "height": 740
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-4-desktop.jpg",
+        "width": 1214,
+        "height": 858
       }
     },
     "bgImage": {
       "mobile": {
-        "uri": "offer-bg-4.jpg",
-        "width": 1466,
-        "height": 977,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-4-bg-mobile.jpg",
+        "width": 960,
+        "height": 1702
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-4-bg-tablet.jpg",
+        "width": 1536,
+        "height": 1242
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-4-bg-desktop.jpg",
+        "width": 2880,
+        "height": 1558
       }
     },
+    "altBgText": "Mountain landscape from above",
     "menuText": "Skydiving",
     "headerText": "Overcome your fears",
     "text": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever."
@@ -213,49 +169,38 @@
     "image": {
       "mobile": {
         "uri": "offer-5-mobile.jpg",
-        "width": 280,
-        "height": 213,
-        "translateX": 39,
-        "translateY": 121
+        "width": 840,
+        "height": 639
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-5-tablet.jpg",
+        "width": 926,
+        "height": 740
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-5-desktop.jpg",
+        "width": 1214,
+        "height": 858
       }
     },
     "bgImage": {
       "mobile": {
-        "uri": "offer-bg-5.jpg",
-        "width": 1584,
-        "height": 1057,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-5-bg-mobile.jpg",
+        "width": 960,
+        "height": 1702
       },
       "tablet": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-5-bg-tablet.jpg",
+        "width": 1536,
+        "height": 1242
       },
       "desktop": {
-        "uri": "",
-        "width": 0,
-        "height": 0,
-        "translateX": 0,
-        "translateY": 0
+        "uri": "offer-5-bg-desktop.jpg",
+        "width": 2880,
+        "height": 1558
       }
     },
+    "altBgText": "Stormy mountain river in the forest",
     "menuText": "Rafting",
     "headerText": "Trust the flow",
     "text": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains."

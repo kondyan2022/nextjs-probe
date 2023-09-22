@@ -1,0 +1,27 @@
+[
+  {
+    "index": 1,
+    "name": "about",
+    "active": true
+  },
+  {
+    "index": 2,
+    "name": "services",
+    "active": true
+  },
+  {
+    "index": 3,
+    "name": "career",
+    "active": true
+  },
+  {
+    "index": 4,
+    "name": "gallery",
+    "active": true
+  },
+  {
+    "index": 5,
+    "name": "contacts",
+    "active": true
+  }
+]
