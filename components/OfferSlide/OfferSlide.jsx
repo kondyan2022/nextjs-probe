@@ -12,7 +12,6 @@ export default function OfferSlide({ image, alt, children }) {
         alt={alt}
         width={image.width}
         height={image.height}
-        priority={true}
         className="absolute w-auto h-[886px] top-0 left-0 object-cover object-left-top "
       ></Image>
       <div className="w-full h-full bg-[#020f0880] relative">

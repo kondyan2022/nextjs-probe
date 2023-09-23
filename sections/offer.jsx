@@ -64,7 +64,6 @@ export default function Offer() {
                         ? elem.image.tablet.uri
                         : elem.image.mobile.uri
                     }`}
-                    priority={true}
                     alt="elem.menuText"
                     width={
                       breakpoint === "xl"

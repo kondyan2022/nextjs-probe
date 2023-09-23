@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "../sections/header";
+import ogimage from "@/public/img/ogimage.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export const metadata = {
         type: "image/x-icon",
         url: "/img/favicon.ico",
         media: "(prefers-color-scheme: light)",
+        sizes: "16x16",
       },
       {
         type: "image/png",
@@ -25,6 +27,7 @@ export const metadata = {
         type: "image/x-icon",
         url: "/img/favicon-dark.ico",
         media: "(prefers-color-scheme: dark)",
+        sizes: "16x16",
       },
       {
         type: "image/png",
@@ -33,6 +36,11 @@ export const metadata = {
         sizes: "32x32",
       },
     ],
+  },
+  openGraph: {
+    title: "Uncover Carpathian’s Secrets. 7 days journey",
+    description:
+      "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
   },
 };
 

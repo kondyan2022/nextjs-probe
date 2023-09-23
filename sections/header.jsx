@@ -15,7 +15,12 @@ const Header = () => (
         href="/"
         className="inline-block w-[61px] h-[34px] mt-[36px] md:mt-[25px]"
       >
-        <Image src={logo} className="h-[21px] w-[59px]" alt="logo" />
+        <Image
+          src={logo}
+          className="h-[21px] w-[59px]"
+          alt="CarpTravel logo"
+          priority={true}
+        />
 
         <div className="font-karantina text-[14px] leading-[1] text-white tracking-[2.59px] font-normal mt-[2px]">
           CarpTravel

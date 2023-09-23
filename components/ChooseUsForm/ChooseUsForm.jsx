@@ -127,7 +127,6 @@ export default function ChooseUsForm() {
           <input
             className="input-style"
             type="tel"
-            inputMode="numeric"
             placeholder="+ 38 (097) 12 34 567"
             id="phone"
             {...register("phone", {
@@ -151,7 +150,6 @@ export default function ChooseUsForm() {
           <textarea
             {...register("message")}
             className="input-style resize-none col-span-6 h-[196px] md:h-[228px]"
-            type="text"
             id="message"
           />
         </div>
@@ -171,9 +169,9 @@ export default function ChooseUsForm() {
             className="peer hidden"
           />
           <label
-            className={`checkbox-label relative tracking-normal pl-[30px] transition-colors duration-300
+            className={`checkbox-label relative tracking-normal pl-[30px] transition-colors duration-300 cursor-pointer
                         before:content-[''] before:h-[22px] before:w-[22px] before:border-[1px] before:border-white
-                         before:duration-300
+                         before:duration-500
                         before:absolute before:top-0 before:left-0
                         after:content-[''] after:h-[14px] after:w-[14px]
                         after:absolute after:bg-white after:opacity-10 peer-checked:after:opacity-100 after:top-[4px] after:left-[4px]
