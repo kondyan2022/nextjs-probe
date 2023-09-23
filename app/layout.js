@@ -6,6 +6,7 @@ import ogimage from "@/public/img/ogimage.jpg";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: new URL("https://nextjs-probe.vercel.app/"),
   title: "CarpTravel. Uncover Carpathian's Secrets.",
   description:
     "7 day journey. We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
@@ -38,6 +39,7 @@ export const metadata = {
     ],
   },
   openGraph: {
+    type: "website",
     title: "Uncover Carpathian's Secrets. 7 days journey",
     description:
       "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
