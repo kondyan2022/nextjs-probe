@@ -35,7 +35,7 @@ const SwiperSlider = ({ breakpoint }) => {
       modules={[EffectCoverflow, Navigation, Autoplay]}
     >
       {galleryData.map((elem) => (
-        <SwiperSlide key={elem}>
+        <SwiperSlide key={elem.index}>
           <GalleryCard
             src={`/img/${elem.uri}`}
             alt={elem.alt}

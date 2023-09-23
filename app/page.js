@@ -1,9 +1,9 @@
-import Hero from "@/sections/hero";
-import Gallery from "@/sections/gallery";
-import Contact from "@/sections/contact";
-import Offer from "@/sections/offer";
-import About from "@/sections/about";
-import ChooseUs from "@/sections/choosus";
+import Hero from "@/sections/Hero/Hero";
+import Gallery from "@/sections/Gallery/Gallery";
+import Contact from "@/sections/Contact/contact";
+import Offer from "@/sections/Offer/Offer";
+import About from "@/sections/About/about";
+import ChooseUs from "@/sections/ChooseUs/ChooseUs";
 
 export default function Home() {
   return (

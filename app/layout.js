@@ -1,12 +1,12 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Header from "../sections/header";
+import Header from "../sections/Header/Header";
 import ogimage from "@/public/img/ogimage.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "CarpTravel. Uncover Carpathian’s Secrets.",
+  title: "CarpTravel. Uncover Carpathian's Secrets.",
   description:
     "7 day journey. We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
   icons: {
@@ -38,7 +38,8 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "Uncover Carpathian’s Secrets. 7 days journey",
+    type: "website",
+    title: "Uncover Carpathian's Secrets. 7 days journey",
     description:
       "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
   },

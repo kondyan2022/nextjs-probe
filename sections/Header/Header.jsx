@@ -1,5 +1,5 @@
 "use client";
-import logo from "../public/img/logo-m.png";
+import logo from "../../public/img/logo-m.png";
 import Image from "next/image";
 import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
 import HeaderMenu from "@/components/HeaderMenu/HeaderMenu";

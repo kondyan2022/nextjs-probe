@@ -5,7 +5,7 @@ const SimpleGallery = () => {
   return (
     <ul className="flex flex-col gap-y-[24px] justify-center">
       {galleryData.slice(0, 3).map((elem) => (
-        <li key={elem} className="mx-auto">
+        <li key={elem.index} className="mx-auto">
           <GalleryCard
             src={`/img/${elem.uri}`}
             alt={elem.alt}
