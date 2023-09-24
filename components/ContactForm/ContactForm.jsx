@@ -23,12 +23,12 @@ export default function ContactForm() {
           "Accepted! Waiting for callback. Data saved in local storage."
         );
         localStorage.setItem("CARP_TRAVEL_CONTACT_US", JSON.stringify(data));
+        console.log(data);
         reset();
       } else {
         toast.error("Server not answer. Try later.");
       }
     }, 3000);
-    console.log(data);
   };
 
   return (

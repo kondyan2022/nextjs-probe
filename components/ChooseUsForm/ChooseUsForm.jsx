@@ -23,13 +23,13 @@ export default function ChooseUsForm() {
         toast.success(
           "Accepted! Waiting for callback. Data saved in local storage."
         );
+        console.log(data);
         localStorage.setItem("CARP_TRAVEL_CHOOSE_US", JSON.stringify(data));
         reset();
       } else {
         toast.error("Server not answer. Try later.");
       }
     }, 3000);
-    console.log(data);
   };
 
   return (
