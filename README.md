@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The project "Uncover Carpathian's Secrets" (UCF) is a site of a team of enthusiasts
+who are fully committed to the mission of creating unforgettable and
+extraordinary trips to the most beautiful parts of the Carpathians.
+Their goal is not just to show you the natural wonders of the mountains,
+but to provide you with a deep immersion in their magical atmosphere.
 
-## Getting Started
+Project layout: https://www.figma.com/file/2nHaXyrwQxqXLYmPUGQuP1/Untitled?type=design&node-id=0%3A1&mode=design&GFpRhDWRmCy9U5n3-1
 
-First, run the development server:
+The project is implemented as a single-page site with adaptive
+and cross-browser layout (mobile from 320px, tablet from 768px, desktop from 1280px).
+Mobile layout with burger menu is responsive from 320px to 480px .
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+OGP information (picture and decription) for instant messengers
+and social networks has been added to the website metadata.
+Implemented favicon changes due to dark or light browser themes
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Technology stack:
+React
+Next.js 13 (using app router)
+Tailwind CSS
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Additional library:
+swiper
+react-hook-form
+react-scroll
+body-scroll-lock
+react-hot-toast
+react-loader-spinner
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Website Sections:
 
-## Learn More
+- Header
+  Not fixed. Contains logo and navigation menu.
+  Smooth scrolling effect by clicking the corresponding item
+  React-scroll is used for smooth navigation to section.
 
-To learn more about Next.js, take a look at the following resources:
+- Hero
+  There is a smooth scrolling effect by clicking "Join Now" button to "contacts" section
+  CSS Animation is used for panoramic of the background view
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- About (Who we are)
+  The section contains information about the team of the enthusiasts.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Services (we offer)
+  The section contains a slider with information about different types of travel.
+  The slider is made by using the Swiper library.
+  Each slide includes:
 
-## Deploy on Vercel
+  - main photo,
+  - background image,
+  - title and text with a brief description of the trip.
+    The slider implements a custom counter and paginator through the list.
+    The slides are switched with a "fade" effect.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Career (Choose us)
+  In this section all intrested persons could join the team of enthusiasts and leave information for feedback.
+  Provide form validation using react-hook-form and Tailwind CSS to style validation errors.
+  The Phone field has a custom input mask.
+  A spinner-loader is displayed after submitting the form and the toast message appears after the result.
+- Gallery (Our gallery)
+  The section contains an endless Swiper slider with 'Coverflow' effect for photo gallery
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Contacts (Contact us)
+  The section contains contact information and a feedback form.
+  Provide form validation using react-hook-form and Tailwind CSS to style validation errors.
+  A spinner-loader is displayed after submitting the form and the toast message appears after the result.

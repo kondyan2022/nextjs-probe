@@ -32,8 +32,8 @@ export default function BurgerMenu() {
   return isMenuOpen ? (
     createPortal(
       <div
-        className="fixed top-[0] left-[50%] translate-x-[-50%]   w-full h-full min-w-[320px] bg-[#010A05BF] 
-              backdrop-blur-[25px] z-[1000] text-white mx-auto max-w-[640px]"
+        className="fixed top-[0] left-[50%] translate-x-[-50%]   w-full h-full min-w-[320px] max-w-[480px] bg-[#010A05BF] 
+              backdrop-blur-[25px] z-[1000] text-white mx-auto "
       >
         <button
           className="text-[14px] leading-[1.25] tracking-[1.4px] text-white  ml-auto mt-[43px] mr-[20px] block"
