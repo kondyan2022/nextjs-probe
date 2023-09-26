@@ -3,7 +3,7 @@ export default function About() {
     <section id="about">
       <div
         className="container mx-auto min-w-[320px] max-w-[480px] md:max-w-[768px] xl:max-w-[1440px] 
-                    px-[20px] md:px-[32px] py-[56px] md:py-[64px] xl:p-[104px] 
+                    px-[20px] md:px-[32px] py-[56px] max-h-[873px] md:py-[64px] xl:p-[104px] 
                     bg-about-bg-mobile bg-[length:480px_873px] bg-center 
                     md:bg-about-bg-tablet md:bg-[length:768px_697px]
                     xl:bg-about-bg-desktop xl:bg-[length:1440px_826px]
