@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 import { useSwiper } from "swiper/react";
-import offerData from "@/public/data/offer.json";
+import offerData from "@/data/offer.json";
 
 export default function OfferPagination() {
   const swiper = useSwiper();

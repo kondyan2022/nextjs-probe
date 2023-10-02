@@ -13,7 +13,7 @@ import "swiper/css/effect-coverflow";
 
 import { SwiperButtonNext, SwiperButtonPrev } from "@/components/SwiperButtons";
 import GalleryCard from "@/components/GalleryCard/GalleryCard";
-import galleryData from "@/public/data/gallery.json";
+import galleryData from "@/data/gallery.json";
 
 const SwiperSlider = ({ breakpoint }) => {
   return (

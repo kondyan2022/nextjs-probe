@@ -1,6 +1,6 @@
 import ChooseUsForm from "@/components/ChooseUsForm/ChooseUsForm";
 import ErrorText from "@/components/ErrorText/ErrorText";
-import whyusData from "@/public/data/whyus.json";
+import whyusData from "@/data/whyus.json";
 export default function ChooseUs() {
   return (
     <section id="career">

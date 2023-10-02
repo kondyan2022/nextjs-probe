@@ -1,5 +1,5 @@
 import GalleryCard from "../GalleryCard/GalleryCard";
-import galleryData from "@/public/data/gallery.json";
+import galleryData from "@/data/gallery.json";
 
 const SimpleGallery = () => {
   return (

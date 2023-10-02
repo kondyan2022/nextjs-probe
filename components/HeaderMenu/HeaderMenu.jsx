@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import menuItems from "@/public/data/menuitem.json";
+import menuItems from "@/data/menuitem.json";
 
 export default function HeaderMenu() {
   return (

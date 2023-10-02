@@ -8,7 +8,7 @@ import {
 } from "body-scroll-lock";
 import { Link } from "react-scroll";
 import useWindowSize from "../../hooks/useWindowSize";
-import menuItems from "@/public/data/menuitem.json";
+import menuItems from "@/data/menuitem.json";
 
 export default function BurgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

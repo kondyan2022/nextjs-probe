@@ -11,7 +11,7 @@ import Image from "next/image";
 
 import SectionContainer from "@/components/SectionContainer/SectionContainer";
 import OfferSlide from "@/components/OfferSlide/OfferSlide";
-import offerData from "@/public/data/offer.json";
+import offerData from "@/data/offer.json";
 import OfferPagination from "@/components/OfferPagination/OfferPagination";
 import useWindowSize from "@/hooks/useWindowSize";
 

@@ -1,4 +1,4 @@
-import dataContact from "../../public/data/contact.json";
+import dataContact from "@/data/contact.json";
 
 export default function ContactInfo() {
   return (
