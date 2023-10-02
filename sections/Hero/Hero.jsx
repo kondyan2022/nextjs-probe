@@ -23,7 +23,7 @@ const Hero = () => (
              text-white uppercase flex flex-wrap justify-center self-end leading-[1.25] md:absolute"
             >
               <span className="font-medium">7</span>
-              <span className="uppercase tracking-[1.665px] md:tracking-[8.71px] xl:tracking-normal">
+              <span className=" w-[96px] md:w-[191px] xl:w-[240px] uppercase tracking-[1.665px]  md:tracking-[8.71px] xl:tracking-normal">
                 Days
               </span>
               <span

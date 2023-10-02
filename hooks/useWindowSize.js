@@ -20,7 +20,7 @@ export default function useWindowSize() {
     function onResize() {
       const newName = BREACKPOINTS.reduce(
         (acc, elem, index, arr) =>
-          window.innerWidth > arr[index].width ? arr[index].name : acc,
+          window.innerWidth >= arr[index].width ? arr[index].name : acc,
         "none"
       );
       setSize({

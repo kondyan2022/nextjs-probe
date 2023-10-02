@@ -133,7 +133,7 @@ export default function ChooseUsForm() {
               required: "Required field",
               minLength: {
                 value: 17,
-                message: "Length must be minimum 10 digit",
+                message: "Minimum 10 digits",
               },
             })}
             onChange={(event) => {
@@ -195,7 +195,7 @@ export default function ChooseUsForm() {
           <button
             type="submit"
             className="text-[30px] xl:text-[32px] font-medium text-right  leading-[1.2] 
-                         hover-effect"
+                         hover-effect focus-effect"
           >
             SEND
           </button>

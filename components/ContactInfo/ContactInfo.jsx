@@ -15,7 +15,7 @@ export default function ContactInfo() {
           <li key={index}>
             <a
               href={`tel:${elem.replace(/[() ]/g, "")}`}
-              className="leading-[1.71] md:leading-[1.5] xl:leading-[1.33] hover-effect"
+              className="leading-[1.71] md:leading-[1.5] xl:leading-[1.33] hover-effect focus-effect"
             >
               {elem}
             </a>
@@ -28,7 +28,7 @@ export default function ContactInfo() {
       <div className="mr-[20px] text-right md:order-5  xl:order-3">
         <a
           className="text-right  mb-[26px] md:leading-[1.5] xl:leading-[1.33] text-[14px] md:text-[16px] 
-                  xl:text-[18px]  hover-effect"
+                  xl:text-[18px]  hover-effect focus-effect"
           href={`mailto:${dataContact.email}`}
         >
           {dataContact.email}
@@ -49,7 +49,7 @@ export default function ContactInfo() {
           >
             <a
               href={`${elem.link}`}
-              className="leading-[1.71] md:leading-[1.5] xl:leading-[1.33] hover-effect"
+              className="leading-[1.71] md:leading-[1.5] xl:leading-[1.33] hover-effect focus-effect"
               target="_blank"
               rel="noreferrer noopener"
             >

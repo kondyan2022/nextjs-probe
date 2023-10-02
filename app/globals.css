@@ -45,7 +45,8 @@ section#gallery .slider-button {
   cursor: pointer;
   opacity: 0.5;
 }
-.pagination-item:hover {
+.pagination-item:hover,
+.pagination-item:focus {
   opacity: 1;
 }
 
@@ -102,5 +103,11 @@ section#gallery .slider-button {
 .hover-effect {
   @apply relative after:content-[''] after:absolute  after:h-[1px] after:w-full
    after:bg-white after:left-0 after:bottom-0 after:scale-0 after:origin-right hover:after:origin-left hover:after:scale-100
+   after:transition-transform after:duration-500;
+}
+
+.focus-effect {
+  @apply relative after:content-[''] after:absolute  after:h-[1px] after:w-full
+   after:bg-white after:left-0 after:bottom-0 after:scale-0 after:origin-right focus:after:origin-left focus:after:scale-100
    after:transition-transform after:duration-500;
 }

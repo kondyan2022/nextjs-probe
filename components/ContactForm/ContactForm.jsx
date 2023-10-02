@@ -110,7 +110,7 @@ export default function ContactForm() {
           />
           <button
             type="submit"
-            className="text-[30px] xl:text-[32px] font-medium text-right  leading-[1.2] hover-effect"
+            className="text-[30px] xl:text-[32px] font-medium text-right  leading-[1.2] hover-effect focus-effect"
           >
             SEND
           </button>

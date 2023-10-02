@@ -17,16 +17,21 @@ export default function OfferPagination() {
                     flex flex-col gap-[16px] w-[165px] md:w-[210px] xl:w-[260px]"
     >
       {offerData.map(({ menuText, index: key }, index) => (
-        <li
-          key={key}
-          className={`cursor-pointer ${
-            activePage === index ? "active-pagination-item" : "pagination-item"
-          }`}
-          onClick={() => {
-            setActivePage(index);
-          }}
-        >
-          {menuText}
+        <li key={key}>
+          <a
+            href="/"
+            className={`cursor-pointer ${
+              activePage === index
+                ? "active-pagination-item"
+                : "pagination-item"
+            }`}
+            onClick={(e) => {
+              e.preventDefault();
+              setActivePage(index);
+            }}
+          >
+            {menuText}
+          </a>
         </li>
       ))}
     </ul>

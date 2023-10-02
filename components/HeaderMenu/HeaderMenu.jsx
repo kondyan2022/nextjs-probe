@@ -16,7 +16,7 @@ export default function HeaderMenu() {
                   smooth={true}
                   offset={0}
                   duration={500}
-                  className="text-[14px] tracking-[1.4px] text-white hover:cursor-pointer hover-effect capitalize"
+                  className="text-[14px] tracking-[1.4px] text-white hover:cursor-pointer hover-effect focus-effect capitalize"
                 >
                   {name}
                 </Link>
