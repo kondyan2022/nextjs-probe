@@ -19,14 +19,12 @@ export default function ButtonJoin() {
         className="block h-[53px] md:h-[50px] xl:h-[71px] w-full md:w-[230px] xl:w-[293px] text-[18px]
                            xl:text-[32px] text-center leading-[2.67] xl:leading-[1.2] xl:pt-[16px]  cursor-pointer 
                            text-white  font-bold bg-[#ffffff19] hover:bg-[#ffffff33] focus:bg-[#ffffff33]
-                            transition-colors duration-500"
+                            transition-colors duration-500 
+                            border [border-image:url('/img/button-mobile.svg')_1_1_1_1_stretch_stretch]
+                            xl:[border-image:url('/img/button-desktop.svg')_1_1_1_1_stretch_stretch]"
       >
         JOIN NOW
       </Link>
-      <div className="absolute top-0 left-0 h-[8px] w-[42px] border-s border-t border-white "></div>
-      <div className="absolute top-0 right-0 h-[8px] w-[42px] border-e border-t border-white "></div>
-      <div className="absolute bottom-0 left-0 h-[8px] w-[42px] border-s border-b border-white "></div>
-      <div className="absolute bottom-0 right-0 h-[8px] w-[42px] border-e  border-b border-white "></div>
     </div>
   );
 }
