@@ -1,9 +1,13 @@
 "use client";
 import { useForm } from "react-hook-form";
+import useFormPersist from "react-hook-form-persist";
 import ErrorText from "../ErrorText/ErrorText";
 import { RotatingLines } from "react-loader-spinner";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+
+const localStorageKey = "CARP_TRAVEL_CONTACT_US_TEMP";
+const localStorageSubmitKey = "CARP_TRAVEL_CONTACT_US";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -11,8 +15,16 @@ export default function ContactForm() {
     register,
     handleSubmit,
     reset,
+    watch,
+    setValue,
     formState: { errors },
   } = useForm();
+
+  useFormPersist(localStorageKey, {
+    watch,
+    setValue,
+    storage: typeof window !== "undefined" && window.localStorage, // default window.sessionStorage
+  });
 
   const onSubmit = (data) => {
     setLoading(true);
@@ -22,7 +34,8 @@ export default function ContactForm() {
         toast.success(
           "Accepted! Waiting for callback. Data saved in local storage."
         );
-        localStorage.setItem("CARP_TRAVEL_CONTACT_US", JSON.stringify(data));
+        localStorage.setItem(localStorageSubmitKey, JSON.stringify(data));
+        localStorage.removeItem(localStorageKey);
         console.log(data);
         reset();
       } else {

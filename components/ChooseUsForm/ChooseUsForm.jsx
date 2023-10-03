@@ -1,19 +1,37 @@
 "use client";
+
 import { useForm } from "react-hook-form";
+import useFormPersist from "react-hook-form-persist";
 import ErrorText from "../ErrorText/ErrorText";
 import telNumberNormalize from "@/utils/telNumberNormalize";
 import { useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import toast, { Toaster } from "react-hot-toast";
 
+const localStorageSubmitKey = "CARP_TRAVEL_CHOOSE_US";
+const localStorageKey = "CARP_TRAVEL_CHOOSE_US_TEMP";
+// function getDefaultValues() {
+//   return JSON.parse(
+//     window.localStorage.getItem("CARP_TRAVEL_CHOOSE_US_TEMP") ?? "{}"
+//   );
+// }
+
 export default function ChooseUsForm() {
   const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
+    watch,
     reset,
+    setValue,
     formState: { errors },
-  } = useForm({});
+  } = useForm();
+
+  useFormPersist(localStorageKey, {
+    watch,
+    setValue,
+    storage: typeof window !== "undefined" && window.localStorage, // default window.sessionStorage
+  });
 
   const onSubmit = (data) => {
     setLoading(true);
@@ -24,7 +42,8 @@ export default function ChooseUsForm() {
           "Accepted! Waiting for callback. Data saved in local storage."
         );
         console.log(data);
-        localStorage.setItem("CARP_TRAVEL_CHOOSE_US", JSON.stringify(data));
+        localStorage.setItem(localStorageSubmitKey, JSON.stringify(data));
+        localStorage.removeItem(localStorageKey);
         reset();
       } else {
         toast.error("Server not answer. Try later.");
@@ -139,6 +158,7 @@ export default function ChooseUsForm() {
             onChange={(event) => {
               const { value } = event.target;
               event.target.value = telNumberNormalize(value);
+              setValue("phone", event.target.value, { shouldValidate: true });
             }}
           />
           <ErrorText choosus>{errors.phone?.message}</ErrorText>
